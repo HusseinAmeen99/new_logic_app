@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class MultiSelection extends StatefulWidget {
-  MultiSelection({super.key});
+class SingleSelection extends StatefulWidget {
+  SingleSelection({super.key});
 
   @override
-  State<MultiSelection> createState() => _MultiSelectionState();
+  State<SingleSelection> createState() => _SingleSelectionState();
 }
 
-class _MultiSelectionState extends State<MultiSelection> {
+class _SingleSelectionState extends State<SingleSelection> {
   List<Map> gifts = [
     {'name': 'LION', 'image': 'assets/animals/lion.png'},
     {'name': 'COW', 'image': 'assets/animals/cow.png'},
