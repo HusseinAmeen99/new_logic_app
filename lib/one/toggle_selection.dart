@@ -41,7 +41,7 @@ class _ToggleSelectionState extends State<ToggleSelection> {
                     GestureDetector(
                       onTap: (){
                         setState(() {
-                          IsFollow!=IsFollow;
+                          IsFollow=!IsFollow;
                         });
                       },
                       child: CircleAvatar(

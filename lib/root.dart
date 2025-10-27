@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:new_logic_app/scrrens/toggle_selection.dart';
-import 'package:new_logic_app/scrrens/single_selection.dart';
-import 'package:new_logic_app/scrrens/Multi_image_select.dart';
+import 'package:new_logic_app/one/multi_selection.dart';
+import 'package:new_logic_app/one/toggle_selection.dart';
+import 'package:new_logic_app/one/single_selection.dart';
+import 'package:new_logic_app/one/Multi_image_select.dart';
 
 class Root extends StatefulWidget {
    Root({super.key});
@@ -17,6 +18,7 @@ class _RootState extends State<Root> {
    SingleSelection(),
     MultiImageSelect(),
     ToggleSelection(),
+    MultiSelection(),
   ];
 
   int SelectedIndex=0;
@@ -26,6 +28,7 @@ class _RootState extends State<Root> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: PageView(
+        physics: NeverScrollableScrollPhysics(),
         controller: controller,
         children: Screens,
         onPageChanged: (value) {
